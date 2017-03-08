@@ -1,2 +1,2 @@
-# Riskmap.github.io
+# risklab.github.io
 Website
