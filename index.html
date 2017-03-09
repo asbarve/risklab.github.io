@@ -5,16 +5,18 @@
 body, html {
   height: 100%;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color:#ffffff;
 }
 .bgimg {
   background-image: url('https://risklab.github.io/Flood_background.JPG');
   height: 100%;
   background-size: cover;
   position: relative;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  
+  z-index: 0;
+
 }
 .middle {
   position: relative;
@@ -22,18 +24,15 @@ body, html {
   text-align: center;
   width: 600px;
   margin:auto;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+
 }
-.header{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  }
 
 a{
-  color:#ffffff;
-   text-decoration: none;
-   font-family: 'Roboto', sans-serif;
-   font-weight: 300;
+  text-decoration: none;
+  font-weight: 300;
 }
 a:active{
   color:#ffffff;
@@ -51,6 +50,8 @@ height:90%;
 padding-top:10px;
 margin:auto;
 overflow: auto;
+font-weight: 300;
+z-index: 2;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -62,6 +63,7 @@ overflow: auto;
   width:20%;
   font-size: 20px;
   font-weight:700;
+  color:#ffffff;
 }
 #about {
   position: relative;
@@ -73,6 +75,7 @@ overflow: auto;
   padding-top:20px;
   text-align:justify;
   line-height: 24px
+  z-index:1;
 }
 
 hr {
@@ -91,7 +94,7 @@ hr {
   <div class="bgimg">
 
     <div class="middle">
-      <p id="header">Urban Risk Maps</p>
+      <p >Urban Risk Maps</p>
       </div>
       <div id="ProjctData">
         <p id="about">Urban Risk Maps is is an open source initiative by Urban Risk Lab to map urban flooding in megacities of global south.This platform harnesses the power of social media to gather, sort, and display information about flooding in real time. The availability of near realtime data allows emergency responders to identify hot-spots of flood activity and better coordinate response promptly. The project is novel in that only confirmed reports are collected from residents, helping to reduce the &quot;noise&quot; of social media, which has previously restricted its use by disaster managers.</p>
@@ -105,7 +108,7 @@ hr {
         <a href="http://urbanrisklab.org"><img src="Linear_logo_White.svg" style="width:250px;height:auto;"></a>
       </div>
       </div>
-
+</div>
 
   </body>
   </html>
