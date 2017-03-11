@@ -184,6 +184,10 @@ section.success {
   }
 }
 
+.proejct-item a:hover {
+ cursor:pointer;
+}
+
 .btn-outline {
   color: white;
   font-size: 20px;
