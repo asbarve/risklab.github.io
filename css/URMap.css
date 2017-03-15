@@ -96,7 +96,7 @@ header .intro-text .Meta_text {
 }
 
 .navbar-custom {
-  background: rgba(49, 170, 222, 0.5);
+  background: rgba(49, 170, 222, 0.7);
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -184,6 +184,10 @@ section.success {
   .first {
     padding-top: 75px;
   }
+}
+
+.proejct-item a:hover {
+ cursor:pointer;
 }
 
 .btn-outline {
