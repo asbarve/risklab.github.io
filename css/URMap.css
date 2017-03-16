@@ -43,20 +43,20 @@ header {
   height: 600px;
   background-size: cover;
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   header {
         background-image:url('../img/Flood_background1.JPG');
         background-size: cover;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   header {
         background-image:url('../img/Flood_background3.JPG');
         background-size: cover;
   }
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   header {
         background-image:url('../img/Flood_background2.JPG');
         }
