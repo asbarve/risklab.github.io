@@ -355,3 +355,7 @@ fieldset[disabled] .btn-success.active {
 #maincontent {
   outline: none;
 }
+.credits {
+  font-size: 12px;
+  text-align: right;
+}
