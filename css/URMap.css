@@ -39,10 +39,27 @@ h6 {
 header {
   text-align: center;
   background: #31aade;
-  background-image:url('../img/Flood_background.JPG');
   color: white;
   height: 600px;
   background-size: cover;
+}
+@media (min-width: 1200px) {
+  header {
+        background-image:url('../img/Flood_background1.JPG');
+        background-size: cover;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  header {
+        background-image:url('../img/Flood_background3.JPG');
+        background-size: cover;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  header {
+        background-image:url('../img/Flood_background2.JPG');
+        }
 }
 
 header .container {
@@ -57,7 +74,6 @@ header img {
   margin-right: auto;
   margin-top: 10px;
   z-index: 3;
-
 }
 header .intro-text .name {
   display: block;
