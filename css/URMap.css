@@ -79,14 +79,14 @@ header .intro-text .name {
   display: block;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 24px;
 }
 header .intro-text .Meta_text {
   font-size: 26px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0.05em;
-  text-shadow: 10px 10px 5px gray;
+  text-shadow: 1px 1px 3px #000;
 }
 
 
@@ -101,7 +101,7 @@ header .intro-text .Meta_text {
   }
   header .intro-text .Meta_text {
     font-size: 36px;
-    font-weight: 100;
+    font-weight: 300;
     letter-spacing: 0.05em;
   }
   .URL_logo {
