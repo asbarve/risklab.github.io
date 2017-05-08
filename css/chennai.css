@@ -113,10 +113,9 @@ a:active {
 
 }
 
-
 .videoWrapper {
 	position: relative;
-	padding-bottom: 50%; /* 16:9 */
+	padding-bottom: 52.56%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
 }
