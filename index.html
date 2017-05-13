@@ -1,288 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Urban Risk Map is harnesses the power of social media to gather, sort, and display information about flooding in real time.">
-  <meta name="author" content="Urban Risk Lab">
-
-  <title>Urban Risk Maps</title>
-
-  <!-- Bootstrap Core CSS and JS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<html>
+<!-- Bootstrap Core CSS and JS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
-  <!-- Theme CSS -->
-  <link href="css/URMap.css" rel="stylesheet">
+<!-- Custom Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  <!-- Custom Fonts -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  ga('create', 'UA-77075547-2', 'auto');
+  ga('send', 'pageview');
 
-  <!-- Google Analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+</script>
+<script src="js/countdown.js"></script>
+<!-- Theme CSS -->
+<link href="css/chennai.css" rel="stylesheet">
+<body>
 
-    ga('create', 'UA-77075547-3', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-
-</head>
-
-<body id="page-top" class="index">
-  <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
-
-  <!-- Navigation -->
-  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-        </button>
-        <a class="navbar-brand" href="#page-top">Urban Risk Map</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="hidden">
-            <a href="#page-top"></a>
-          </li>
-          <li class="page-scroll">
-            <a href="#about">About</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#proejct">Project Locations</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-
-  <!-- Header -->
-  <header>
-  <div id="headerImg">
-    <div class="container" id="maincontent" tabindex="-1">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="intro-text">
-            <span class="Meta_text">Urban Risk Map is an open source initiative to map urban flooding and provide real-time actionable information to the emergency responders and citizens</span>
-            <br><br><a href="http://urbanrisklab.org">
-              <div class="URL_logo"><img src="img/URL_logo.png"></a></div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="bgimg">
+  <div class="middle">
+    <h1 class="header">COMING SOON</h1>
+    <div class="timer">
+    <table>
+      <tr>
+        <td class="timeText" id="days"></td><td class="timeText" id="hours"></td><td class="timeText" id="minutes"></td><td class="timeText" id="seconds"></td>
+      </tr>
+      <tr>
+        <td>Days</td><td>Hours</td><td>Minutes</td><td>Seconds</td>
+      </tr>
+    </table>
   </div>
-  </header>
+    <hr>
 
-  <!-- About Section -->
-  <section class="success" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h4>About</h4>
-          <hr>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6"><br><br><br><center><img src="img/URMap.gif" style="width:60%;Height:auto;"></center>
-        </div>
-        <div class="col-sm-6">
-          <p>
-          <br>  Urban Risk Map harnesses the power of social media to gather, sort, and display information about flooding in real time.
-            This project is currently operating in three cities in Indonesia - Greater Jakarta, Bandung, Surabaya and the deployment for India underway in the city of Chennai.
-          </p>
-
-          <p>
-            Verified and timely Information is the single most crucial asset for disaster management and mitigation.
-            By adopting "people as sensors" paradigm, this project is developing a platform to
-            gather and inject real-time crowd-sourced information into existing emergency warning, monitoring and response systems.
-            The platform collects flood data using a stack of information report cards,
-            which people can access through their preferred social media.
-            The cards are served through a unique link requested via messaging apps or social media (e.g. Twitter, Facebook, Telegram).
-            For example, on Twitter – the Riskmap platform listens to specific keywords and sends unique links to the users who ready to fill out a report card.
-            The concept of cards not only gives verified information,
-            but also imparts tremendous flexibility to the process of data collection as cities can have a set of pre-designed cards for specific disaster types
-            that can be quickly turned on and made available.
-          </p>
-          <br>
-          <p>
-            Reports are instantly added to the public map, allowing the residents to quickly and efficiently share
-            critical information.Supporting the public map, reports feed into a custom-built Risk Evaluation Matrix (REM)
-            designed especially for emergency responders and government agencies. The REM interface allows control-room
-            operators to issue flood alerts based on data from residents and ancillary information.
-            Alerts can also be used to coordinate rescue and response efforts, and are also shared on the pubically-available map,
-            'helping inform citizens of government’s response in real time.
-          </p>
-          <br>
-        </div>
-        <div class="col-sm-12">
-          <center><br><img src="img/ProcessFlow.svg" style="width:95%;height:auto;"></center>
-        </div>
-        <div class="col-sm-12">
-          <p>
-            The system of report cards is highly flexible and can accommodate various disaster types.
-            The platform is designed to scale and can be deployed rapidly to new regions.
-            We are actively working on developing the platform to expand and cover the need
-            for rapid post-disaster assessment teams to coordinate relief supply, debris removal or rescue crews.
-          </p>
-        </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- proejct Grid Section -->
-    <section id="proejct">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h4>Proejct Locations</h4>
-            <hr><br>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 proejct-item">
-            <center> <br><H6>Indonesia</H6>
-              <br>
-              <a href="https://PetaBencana.id"><img src="img/project/Peta_logo.svg" style="height:50px;"></a> <hr>
-              <p style="text-align:left;">
-                In Indonesia, the Urban Risk Map instance, - Petabencana.id (‘Disaster Map’) - supports 50 million
-                residents in three cities, Jakarta, Surabaya, and Bandung,
-                PetaBencana.id has proven that the community-led data collection, sharing, and coordination reduces flood risk
-                and assists relief efforts.
-                The Federal Disaster Management Agency of Indonesia (BNPB) uses the map as part of its daily emergency management
-                operations - helping to connect individual residents with national -scale response efforts. This project is supported by USAID and is in partnership with Pacific Disaster Center.</p>
-            </center>
-          </div>
-          <div class="col-sm-6 proejct-item">
-            <center><br><H6>India</h6>
-              <br> <a href="http://riskmap.in"><img src="img/project/Riskmap_logo.svg" style="height:50px;"></a> <hr>
-              <p style="text-align:left;">This project - supported by TATA Center for Technolgy and Design at MIT - is focused on urban hazzards vulnarablity of Indian cities. Currently in the development mode for city of Chennai,
-                this platform will gather confirmed flood reports from social media and messaging platforms, This platform will feed the crowd-sourced data to Emergency Managment Cell of the Chennai Municipal corporation through a custom built REM (Risk Evaluation Metrix).</p>
-            </center>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h4>Get in touch with us</h4>
-            <hr class="star-primary">
-          </div>
-        </div>
-
-      <div class="row">
-<!-- Feedback form -->
-        <div class="col-lg-8 col-lg-offset-2">
-          <iframe id="JotFormIFrame-70693731064154" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.us/70693731064154" frameborder="0" style="width:100%; height:539px; border:none;" scrolling="no"> </iframe>
-          <script type="text/javascript">
-          window.handleIFrameMessage = function(e) {
-            var args = e.data.split(":");
-            var iframe = false;
-            if (args.length > 2) {
-              iframe = document.getElementById("JotFormIFrame-" + args[2]);
-            } else {
-              iframe = document.getElementById("JotFormIFrame");
-            }
-            if (!iframe) return;
-            switch (args[0]) {
-              case "scrollIntoView":
-              iframe.scrollIntoView();
-              break;
-              case "setHeight":
-              iframe.style.height = args[1] + "px";
-              break;
-              case "collapseErrorPage":
-              if (iframe.clientHeight > window.innerHeight) {
-                iframe.style.height = window.innerHeight + "px";
-              }
-              break;
-              case "reloadPage":
-              window.location.reload();
-              break;
-            }
-            var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-            if (isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-              var urls = {
-                "docurl": encodeURIComponent(document.URL),
-                "referrer": encodeURIComponent(document.referrer)
-              };
-              iframe.contentWindow.postMessage(JSON.stringify({
-                "type": "urls",
-                "value": urls
-              }), "*");
-            }
-          };
-          if (window.addEventListener) {
-            window.addEventListener("message", handleIFrameMessage, false);
-          } else if (window.attachEvent) {
-            window.attachEvent("onmessage", handleIFrameMessage);
-          }
-          if (window.location.href && window.location.href.indexOf("?") > -1) {
-            var ifr = false;
-            if (args.length > 2) {
-              ifr = document.getElementById("JotFormIFrame-" + args[2]);
-            } else {
-              ifr = document.getElementById("JotFormIFrame");
-            }
-            var get = window.location.href.substr(window.location.href.indexOf("?") + 1);
-            if (ifr && get.length > 0) {
-              var src = ifr.src;
-              src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get;
-              ifr.src = src;
-            }
-          }
-          </script>
-        </div>
-      </div>
-      <div class="row">
-    <!-- Credits -->
-        <div class="col-sm-12"><hr><p class="credits">&copy; Urban Risk Lab 2017 | Image Credits : Barry Beagen, Vijayingarsal</div>
-      </div>
+    <h6 class="description">'Riskmap.in' is an open source initiative by <b><a href="http://www.urbanrisklab.org">Urban Risk Lab, MIT</a></b> to map and crowdsource the reporting of urban flooding in Indian cities. This platform will provide real-time actionable information to the emergency responders as well as citizens to tackle the events of urban flooding</h6>
+    <p class="description">Riskmap.in harnesses the power of social media to gather, sort, and display information about the flooding in real time. This platform will provide real-time actionable information to emergency responders, disaster managers to send out targeted alters and coordinate the relief activities and citizens to tackle the monsoon and cyclone-related flooding events.</p>
+    <p class="description">With the support of TATA Center for Technology and Design at MIT and Greater Chennai Corporation, this project is being piloted in the city of Chennai.</p>
+    <div class="videoWrapper">
+      <iframe id="ytplayer" type="text/html"
+      src="https://www.youtube.com/embed/8aFRL4CaUIs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen="true"></iframe>
     </div>
-  </section>
+    <br><br>
 
 
-  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-  <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-    <a class="btn btn-primary" href="#page-top">
-      <i class="fa fa-chevron-up"></i>
-    </a>
+    <div class="logo">
+      <hr>
+    <a href="http://urbanrisklab.org"><img src="img/URL_logo.png"></a>
+
   </div>
+ </div>
 
 
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-  <!-- Bootstrap Core JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<div class="attribution">"Chennai flood water logging near ofice nandanam6" by Vijayingarsal, licensed under CC0 </div>
+</div>
 
 
-  <!-- Theme JavaScript -->
-  <script src="js/freelancer.min.js"></script>
-  <!-- JQUERRY CDN-->
-
-  </body>
-
-  </html>
+</body>
+</html>
