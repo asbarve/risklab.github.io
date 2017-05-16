@@ -14,9 +14,8 @@ h2 {
     background-image: url('../img/risk.jpeg');
     position: relative;
     color: white;
-<<<<<<< HEAD
     opacity: 0.9;
-=======
+
     font-family: "Roboto",sans-serif;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -34,7 +33,7 @@ h2 {
     background: rgba(0,0,0, 0.4);
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
->>>>>>> c61c805dcc25874d76a7496e2fcb6167300faffe
+
 }
 
 .header{
@@ -71,20 +70,7 @@ table td{
     padding-top: 25px;
     border: none;
  }
-<<<<<<< HEAD
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    background: rgba(6 , 6, 6, 0.8);
-    padding: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-=======
 
->>>>>>> c61c805dcc25874d76a7496e2fcb6167300faffe
 .attribution {
     bottom: 0px;
     text-align: center;
