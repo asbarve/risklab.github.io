@@ -12,13 +12,31 @@ h2 {
 
 .bgimg {
     background-image: url('../img/risk.jpeg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
     position: relative;
     color: white;
+<<<<<<< HEAD
     opacity: 0.9;
+=======
+    font-family: "Roboto",sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
+.middle {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    background: rgba(0,0,0, 0.4);
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+>>>>>>> c61c805dcc25874d76a7496e2fcb6167300faffe
+}
+
 .header{
   font-weight: 100;
 }
@@ -53,6 +71,7 @@ table td{
     padding-top: 25px;
     border: none;
  }
+<<<<<<< HEAD
 .middle {
     position: absolute;
     top: 50%;
@@ -63,11 +82,13 @@ table td{
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+=======
+
+>>>>>>> c61c805dcc25874d76a7496e2fcb6167300faffe
 .attribution {
-    position: absolute;
     bottom: 0px;
-    text-align: right;
-    font-size: 11px;
+    text-align: center;
+    font-size: 10px;
 }
 hr {
     margin: auto;
@@ -139,11 +160,13 @@ a:active {
 }
 
 @media screen and (min-width: 1601px) {
+
 .middle{
   width: 800px;
 }
 }
 @media screen and (min-width: 769px) and (max-width: 1600px){
+
 .middle{
   width: 700px;
 }
