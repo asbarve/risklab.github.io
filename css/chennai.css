@@ -26,17 +26,27 @@ h2 {
     -o-background-size: cover;
     background-size: cover;
 
+
 }
 .middle {
     width: 300px;
     margin: 50px auto;
     text-align: center;
     background: rgba(0,0,0, 0.4);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    position: relative;
+    z-index: 2;
+    overflow: scroll;
+    height: 90%;
 }
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 
 .header{
   font-weight: 100;
